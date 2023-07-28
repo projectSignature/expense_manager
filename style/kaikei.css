@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+@font-face {
+  font-family: fontDefault;
+  src: url('../fonts/Poppins/Poppins-Light.ttf')
+}
+
+html {
+  overflow-y: hidden;
+  height: 100vh;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'fontDefault', sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 6%;
+  background-color: #FF6928;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header div {
+  height: 100%;
+}
+
+.header-left-div,
+.header-right-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header span {
+  font-size: 4vh;
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
+}
+
+header img {
+  height: 100%;
+}
+
+.main-div {
+  width: 100%;
+  height: 90%;
+}
+
+.div-comon-division {
+  width: 100%;
+  height: 3rem;
+  background-color: #CCCCCC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-button {
+  width: 6rem;
+  height: 80%;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 3vh;
+  cursor: pointer;
+  color: #333333;
+}
+
+.top-button:hover {
+  background: #FF6928
+}
+
+.div-comon-division-common {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 2.5rem;
+  border-bottom: 1px solid #CCCCCC;
+
+}
+
+#nav-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ico-config {
+  position: absolute;
+  right: 10px;
+  top: 9.3%;
+  transform: translateY(-50%);
+  height: 3rem;
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+#ico-config img {
+  height: 40px;
+}
+
+#ico-config:hover {
+  background-color: #FF6928;
+}
+
+.focus {
+  border: 3px solid #FF6928;
+  border-radius: 5px
+}
+
+.dim {
+  opacity: 0.5;
+  filter: blur(4px);
+}
+
+
+.date-div-span {
+  text-align: left;
+  width: 10%;
+  margin-left: 2%;
+  font-size: 1rem;
+}
+
+.right-div-add {
+  width: 10%;
+  font-size: 3vh;
+  cursor: pointer;
+  color: #555555;
+  text-align: center;
+}
+
+.center-colomn-div {
+  width: 70%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.calender-input {
+  background-color: #EEEEEE;
+  height: 80%;
+  width: 100%;
+  font-size: 3vh;
+  text-align: center;
+  border: 0px
+}
+
+.calender-input-text {
+  height: 80%;
+  width: 100%;
+  font-size: 3vh;
+  text-align: center;
+  border: 0px;
+  overflow-x: auto
+}
+
+.center-colomn-div input {
+  width: 100%;
+}
+
+.div-comon-division-common select {
+  width: 15rem;
+  height: 80%;
+  font-size: 3vh;
+  text-align: center;
+  border: 0px;
+  color: #555555;
+}
+
+/*------------------------>*/
+.category-main-div {
+  margin-top: 10px;
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 10px;
+}
+
+.regist-button {
+  margin-top: 15px;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.regist-button input {
+  width: 8rem;
+  height: 90%;
+  background-color: #6927FF;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-left: 15px;
+  font-size: 3vh;
+}
+
+.category-select-button {
+  width: 25%;
+  height: 4rem;
+  border: 0.5px solid #888888;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.category-select-button:hover {
+  border: 2px solid #FF6928
+}
+
+.category-select-button div {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  .main-div {
+    flex-wrap: wrap;
+  }
+
+  .main-div-div {
+    margin-left: 1rem;
+    width: 14rem;
+  }
+
+  header span {
+    font-size: 2.5vh;
+  }
+
+  .date-div-span {
+    text-align: left;
+    width: 10%;
+    margin-left: 2%;
+    font-size: 2vh;
+  }
+
+  .regist-button {
+    height: 4rem;
+  }
+}

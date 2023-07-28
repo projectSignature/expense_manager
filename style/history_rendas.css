@@ -1,0 +1,271 @@
+html{
+overflow-y: hidden;
+      height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+}
+header{
+  width:100%;
+  height:6%;
+  background-color: #FF6928;
+  display: flex;
+  justify-content:space-between;
+  align-items:  center;
+}
+header div{
+  height:100%;
+}
+.header-left-div,.header-right-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+header span{
+  font-size:4vh;
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
+}
+header img{
+  height:100%;
+}
+.main-div{
+  width:100%;
+  height:90%;
+}
+.div-comon-division{
+ width:100%;
+ height:3rem;
+ margin-top: 15px;
+}
+.div-comon-division-title, .div-comon-division-answer{
+  width: 100%;
+  height: 40%;
+  display: flex;
+}
+.div-comon-division-title div{
+  width:25%;
+  text-align: center;
+  font-size: 1.5vh;
+}
+.div-comon-division-answer div{
+  width:25%;
+  text-align: center;
+  font-size: 2vh;
+  font-weight: bold;
+}
+.keihi-show-history{
+  width:100%;
+  height:38rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.keihi-show-history-child{
+  width:100%;
+  height:2.5rem;
+  display: flex;
+  border-bottom: 0.2px solid #777777
+}
+.keihi-show-history-title{
+  width:100%;
+    margin-top: 15px;
+  height:1.5rem;
+  background: #FF9872
+}
+.keihi-show-history-day{
+  width:15%;
+  font-size: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.keihi-show-history-name{
+  width:30%;
+  font-size: 2vh;
+  display: flex;
+  justify-content: center;
+    align-items: center;
+  text-align: center;
+}
+.keihi-show-history-value{
+  width:40%;
+  font-size: 2.5vh;
+  display: flex;
+  justify-content: center;
+    align-items: center;
+  text-align: center;
+}
+.div-comon-division-common{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  width:100%;
+  height:4rem;
+  border-bottom:1px solid #CCCCCC;
+  cursor: pointer !important
+}
+.div-comon-division-common select{
+  width:15rem;
+  height:80%;
+  font-size: 3vh;
+  text-align: center;
+  border: 0px;
+  color:#555555
+}
+.date-div-span{
+  text-align: left;
+  width:10%;
+  margin-left: 2%;
+  font-size:2vh;
+}
+.right-div-add{
+  width:10%;
+  font-size: 3vh;
+  cursor: pointer;
+  color:#555555;
+  text-align: center;
+}
+.divmain-date-input{
+  display: flex;
+  justify-content: center;
+  height:100%;
+}
+.divmain-date-input input{
+  border-radius:10px
+}
+.center-colomn-div{
+  width:70%;
+  height:100%;
+  align-items:  center;
+  display: flex;
+  justify-content: center;
+}
+.center-colomn-div input{
+  width: 100%;
+  height:80%;
+    text-align: center ;
+    font-size: 3vh;
+    color:#444444;
+}
+#textup{
+  height:6rem !important
+}
+textarea{
+  height:80%;
+  font-size: 2vh;
+  color:#444444;
+}
+.top-main-div{
+  display: flex;
+  width:100%;
+  height:5rem;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #DDDDDD;
+
+}
+.second-title{
+  display: flex;
+  width:50%;
+  height:4rem
+}
+#total-vendas{
+  margin-left: 5%
+}
+.title-top-div{
+  width:40%;
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  align-items: center;
+  margin-right: 5px;
+}
+.answer-div{
+  font-size: 2vh;
+  width:60%;
+  height:90%;
+  background-color: #333333;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+  margin-right:10px
+}
+.syunyu-history-main-scroll{
+  width: 100%;
+
+}
+.tandoku-div{
+  width: 100%;
+  display: flex;
+  border-bottom: 0.5px solid gray;
+  margin-top:5px
+}
+.tandoku-div-title{
+  width: 100%;
+  display: flex;
+   background-color: orange
+}
+.numberid{
+  width:10%;
+}
+.other-title{
+  width:21%;
+  margin-left: 1%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.daymonthselect{
+  display: flex;
+  justify-content: space-around;
+  background-color: #DDDDDD
+}
+.daymonthselect input, .daymonthselect select{
+  width:6rem;
+  height:2rem;
+  text-align: center;
+  font-size: 1.8vh;
+  border-radius: 10px
+}
+.selectmonthFluxo{
+  width: 100%;
+  height:3rem;
+  background-color: #DDDDDD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.selectmonthFluxo input{
+  width:90%;
+  height:80%;
+  text-align: center;
+  font-size:3.5vh;
+  color:#444444
+}
+@media only screen and (max-width: 800px) {
+  .main-div{
+    flex-wrap: wrap;
+  }
+  .main-div-div{
+    margin-left:1rem;
+    width:14rem;
+  }
+  header span{
+    font-size:3vh;
+  }
+  .date-div-span{
+    text-align: left;
+    width:10%;
+    margin-left: 2%;
+    font-size:2vh;
+  }
+  .regist-button{
+    height:4rem;
+  }
+}

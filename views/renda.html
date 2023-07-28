@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+
+<head>
+    <meta charset="utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../style/kaikei_renda.css">
+    </script>
+</head>
+
+<body  class="bg-dark">
+  <header>
+    <div class="header-left-div">
+      <img src="..\image\rootsgrill_logo.png" width="50" class="setting-right-button"  />
+      <span>Roots Grill</span>
+    </div>
+    <div class="header-right-div">
+     <span id="name-span"></span>
+   </div>
+  </header>
+  <div class="main-div">
+    <div class="div-comon-division">
+      <input type="button" class="top-button" value="履歴" onclick="pagechange('history_despesas')"/>
+      <input type="button" class="top-button" id="keihi-select" value="経費" onclick="process1(1)"/>
+      <input type="button"  class="top-button" id="syunyu-select" value="収入" onclick="process1(2)"/>
+      <i id="ico-config"><img src="../image/icons8-excluir-lixeira-24.png"/></i>
+    </div>
+    <div class="div-comon-division-common">
+      <div class="date-div-span">日付</div>
+      <div class="right-div-add" onclick="dayChange(1)"><</div>
+      <div class="center-colomn-div"><input type="date" class="calender-input" id="calender-input" required/></div>
+      <div class="right-div-add" onclick="dayChange(2)">></div>
+    </div>
+    <div class="div-comon-division-common">
+      <div class="date-div-span">メモ</div>
+      <div class="right-div-add"></div>
+      <div class="center-colomn-div"><textarea placeholder="内容入力" type="text" id="memo-pay"　rowa="8" cols="40"　required class="calender-input-text"></textarea></div>
+      <div class="right-div-add"></div>
+    </div>
+    <div class="div-comon-division-common">
+     <div class="date-div-span">方法</div>
+     <div class="right-div-add"></div>
+     <div class="center-colomn-div">
+       <select id="pay-select">
+         <option value="0">ゆうちょ銀行</option>
+         <option value="1">現金</option>
+         <option value="2">クレジット</option>
+       </select>
+     </div>
+    <div class="right-div-add"></div>
+   </div>
+
+ <div class="div-comon-division-common">
+   <div class="date-div-span">金額</div>
+   <div class="right-div-add"></div>
+   <div class="center-colomn-div"><input placeholder="￥" type="text" class="calender-input" id="value-input" oninput="kanmaReplase()"  inputmode="numeric" required/></div>
+   <div class="right-div-add"></div>
+ </div>
+
+
+    <div class="category-main-div">
+      <div class="category-select-button" id="btn-add" style="border: 1px solid red" onclick="addkamoku(12)">
+        <img src="..\image\icon_add.png" width="40"/>
+        <div><span>科目追加</span></div>
+      </div>
+    </div>
+    <div class="regist-button">
+     <input value="支払済" type="button" onclick="savedata(this.value)"/>
+     <input value="未払い" type="button" onclick="savedata(this.value)" style="background: #FF3333"/>
+    </div>
+  </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+     <script src="../script/swal.js"></script>
+     <script type="text/javascript" src="../script/kaikei_renda.js"></script>
+</body>
+
+</html>

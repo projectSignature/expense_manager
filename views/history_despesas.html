@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+
+<head>
+    <meta charset="utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../style/history_despesas.css">
+    </script>
+</head>
+
+<body  class="bg-dark">
+  <main class="container">
+    <header>
+      <div class="header-left-div">
+        <img src="..\image\rootsgrill_logo.png" width="50" class="setting-right-button"  />
+        <span>Roots Grill</span>
+      </div>
+      <div class="header-right-div">
+       <span id="name-span"></span>
+     </div>
+    </header>
+    <div class="main-div">
+      <div class="keihi-show-history-title">
+        <img id="btn-home" src="../image/icons8-casa-48.png"/>
+        <div class="icons">    
+  <i id="change-calender"><img src="../image/icons8-data-de-pagamento-48.png " height="25" width="30" alt="Gráfico"></i>
+  <i id="change-grafic"><img src="../image/icons8-analytics-48.png" height="25" width="30" alt="Gráfico"></i>
+        </div>
+      </div>
+    <section class="aba-history">
+      <div class="btns-filter">
+        <button id="filter-geral" onclick="getAllData(1)">Todos</button>
+        <button id="filter-despesa" onclick="getAllData(2)">Despesas</button>
+        <button id="filter-renda" onclick="getAllData(3)">Rendas</button>
+      </div>
+     <div class="history-area">
+        <ul class="new-card">
+          <li><span>ID: </span><span>01</span></li>
+          <li><span>NAME: </span><span>teste</span></li>
+          <li><span>DATA_REGISTER: </span><span>teste</span></li>
+          <li><span>METHOD: </span><span>teste</span></li>
+          <li><span>VALUE_MONEY: </span><span>teste</span></li>
+          <li><span>CATEGORY: </span><span>teste</span></li>
+          <li><span>STATUS: </span><span>teste</span></li>
+          <li><span>MEMO: </span><span>teste</span></li>
+        </ul>
+        <ul class="new-card">
+          <li><span>ID: </span><span>01</span></li>
+          <li><span>NAME: </span><span>teste</span></li>
+          <li><span>DATA_REGISTER: </span><span>teste</span></li>
+          <li><span>METHOD: </span><span>teste</span></li>
+          <li><span>VALUE_MONEY: </span><span>teste</span></li>
+          <li><span>CATEGORY: </span><span>teste</span></li>
+          <li><span>STATUS: </span><span>teste</span></li>
+          <li><span>MEMO: </span><span>teste</span></li>
+        </ul>
+        <ul class="new-card">
+          <li><span>ID: </span><span>01</span></li>
+          <li><span>NAME: </span><span>teste</span></li>
+          <li><span>DATA_REGISTER: </span><span>teste</span></li>
+          <li><span>METHOD: </span><span>teste</span></li>
+          <li><span>VALUE_MONEY: </span><span>teste</span></li>
+          <li><span>CATEGORY: </span><span>teste</span></li>
+          <li><span>STATUS: </span><span>teste</span></li>
+          <li><span>MEMO: </span><span>teste</span></li>
+        </ul>
+        <ul class="new-card">
+          <li><span>ID: </span><span>01</span></li>
+          <li><span>NAME: </span><span>teste</span></li>
+          <li><span>DATA_REGISTER: </span><span>teste</span></li>
+          <li><span>METHOD: </span><span>teste</span></li>
+          <li><span>VALUE_MONEY: </span><span>teste</span></li>
+          <li><span>CATEGORY: </span><span>teste</span></li>
+          <li><span>STATUS: </span><span>teste</span></li>
+          <li><span>MEMO: </span><span>teste</span></li>
+        </ul>
+      
+     </div>
+     <span id="export">
+      <button id="xlsx">xlsx</button>
+      <button id="csv">csv</button>
+
+     </span>
+    </section>
+  
+     <div id="grafic-area">
+        <nav class="nav-chart">
+          <button class="btn-chart" onclick="alterGrafic()">Despesa</button>
+        </nav>
+        <div class="myChart">
+          <canvas id="myChart"></canvas>
+        </div>
+    
+        <div class="myChart2">
+          <canvas id="myChart2"></canvas>
+        </div> 
+     </div>
+
+     <div id="grafic-area-pie">
+      <div class="myChart3">
+        <canvas id="myChart3"></canvas>
+      </div>
+      <div class="myChart4">
+        <canvas id="myChart4"></canvas>
+      </div>
+     </div>
+
+  
+     <section class="aba-calender">
+      <h1>Calendário de Renda e Despesa</h1>
+      <div id="mouth-nav">
+       <button onclick="mesAnterior()">&#11013</button>
+       <span id="mes-atual">Mês e Ano Atual</span>
+       <button onclick="mesSeguinte()">&#10145</button>
+     </div>
+      <div id="calendar"></div>
+      <div>
+        <h2>Total de Renda: <span id="total-renda">0</span></h2>
+        <h2>Total de Despesa: <span id="total-despesa">0</span></h2>
+      </div>
+     </section>  
+    </div>
+  </main>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0"></script>
+  <script src="../lib/package/dist/chartjs-plugin-datalabels.min.js"></script>
+  <script src="../lib/chartjs-plugin-annotation-2.1.2/package/dist/chartjs-plugin-annotation.min.js"></script>
+  <script src="../script/swal.js"></script>
+  <script src="../script/history.js"></script>
+</body>
+
+
+</html>
